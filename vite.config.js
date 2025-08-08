@@ -4,5 +4,6 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/",
+  base: '/thungstory/',   // ✅ 레포명과 일치
+  build: { outDir: 'docs' } // ✅ 빌드 산출물을 docs/로
 });
